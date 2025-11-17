@@ -5,12 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mughammad's Portfolio</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @layer components {
+        .pill {
+          @apply bg-[#ECF4F1] text-black text-[14px] font-medium tracking-[2px]
+               inline-flex items-center justify-center
+               rounded-[96.81px]
+               py-[9.68px] px-[24.2px];
+        }
+      }
+    </style>
   </head>
   <body
     class="grid grid-cols-4 gap-4 p-4 bg-[url('/assets/background.png')] bg-cover bg-center min-h-screen"
   >
     <!--== Profile & Summary ==-->
-    
+
     <header class="col-span-4 flex items-center gap-6">
       <section
         class="w-[140px] h-[140px] lg:w-[220px] lg:h-[220px] flex-shrink-0"
@@ -56,7 +66,6 @@
       </div>
 
       <div class="grid grid-cols-[auto_1fr] gap-x-6 gap-y-4">
-
         <p class="text-[15px] text-black">JavaScript</p>
         <div class="h-full bg-[#4A8B70] rounded-[3px] w-[95%]"></div>
 
@@ -74,9 +83,25 @@
     <!--== Proficiency Bars ==-->
 
     <!--== Skills ==-->
-    <section class="col-span-4 lg:col-span-2 bg-red-500">
-      <p>test</p>
+
+    <section
+      class="col-span-4 lg:col-span-2 bg-white p-5 rounded-xl shadow-[0_0_2px_#DADADA] flex flex-col gap-5"
+    >
+      <h2 class="text-[20px] font-semibold text-black">Skills</h2>
+
+      <div class="flex flex-wrap gap-3">
+        <p><span class="pill"> Software Development </span></p>
+        <p><span class="pill"> Agile </span></p>
+        <p><span class="pill"> UI Design </span></p>
+        <p><span class="pill"> Problem Solving </span></p>
+        <p><span class="pill"> Git And Version Control </span></p>
+        <p><span class="pill"> Web Development </span></p>
+        <p><span class="pill"> Team Collaboration </span></p>
+        <p><span class="pill"> Functional Programming </span></p>
+        <p><span class="pill"> RESTful APIs </span></p>
+      </div>
     </section>
+    
     <!--== Skills ==-->
 
     <!--== Projects ==-->
