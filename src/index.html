@@ -17,38 +17,39 @@
     </style>
   </head>
   <body
-    class="grid grid-cols-4 gap-4 p-4 bg-[url('/assets/background.png')] bg-cover bg-center min-h-screen"
+    class="grid grid-cols-4 gap-4 bg-[url('/assets/background.png')] bg-cover bg-center min-h-screen p-[24px] lg:p-[48px]"
   >
     <!--== Profile & Summary ==-->
 
-    <header class="col-span-4 flex items-center gap-6">
-      <section
-        class="w-[140px] h-[140px] lg:w-[220px] lg:h-[220px] flex-shrink-0"
-      >
+    <header class="grid grid-cols-4 col-span-4 gap-6">
+      <div class="col-span-2 lg:col-span-1">
         <img
-          src="/assets/temp-profile.jpg"
+          src="/assets/profile-image.jpg"
           alt="Profile Image"
-          class="w-full h-full object-cover rounded-2xl"
+          class="col-span-1 object-cover rounded-[24px]"
         />
-      </section>
+      </div>
 
-      <section
-        class="bg-white p-6 lg:p-10 rounded-2xl shadow-[0_0_3px_#DADADA] flex-1"
+      <div
+        class="col-span-2 lg:col-span-3 p-2 lg:p-10 rounded-[24px] shadow-[0_0_3px_#DADADA] bg-white"
       >
-        <h1 class="text-xl lg:text-2xl font-bold mb-4">Name Surname</h1>
-
-        <p
-          class="text-[15px] lg:text-[17px] leading-6 text-[#4A4A4A] max-w-[700px]"
+        <h1
+          class="font-bold text-[18px] lg:text-[22px] leading-[24px] my-4 lg:mt-0 lg:mb-[16px]"
         >
-          I am a passionate and dedicated software developer with a strong
-          foundation in JavaScript and React.
-          <span class="hidden md:inline"
-            >With hands-on experience in building dynamic and responsive web
-            applications, I excel at transforming complex requirements into
-            intuitive user interfaces.</span
+          Mughammad Case
+        </h1>
+
+        <p class="text-[14px] lg:text-[16px] leading-[24px] text-[#4A4A4A]">
+          I'm an aspiring software developer focused on front-end development.<span
+            class="hidden md:inline"
+          >
+            I enjoy clean design, creative problem-solving, and continuous
+            learning. With hands-on experience in building dynamic, responsive
+            web interfaces. I'm actively creating new projects and growing my
+            portfolio. Explore my work to see what I've been building.</span
           >
         </p>
-      </section>
+      </div>
     </header>
 
     <!--== Profile & Summary ==-->
